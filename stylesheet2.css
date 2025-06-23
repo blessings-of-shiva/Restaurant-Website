@@ -1,0 +1,20 @@
+body
+{
+    h1
+    {
+        font-size: 70px;
+        padding: 10px;
+    }
+    button
+    {
+        font-size: small;
+        font-display:inherit;
+        font-style: italic;
+        padding: 5px;
+        
+    }
+    table
+    {
+        border-spacing: 10px;
+    }
+}
