@@ -1,7 +1,3 @@
-#body
-{
-  background: url("login.jpg") no-repeat;
-}
 #menu
 {
   padding: 25px 0 25px 0;
@@ -33,7 +29,7 @@
   padding:5px;
   font-family: cursive;
 }
-#image
+/*#image
 {
   width: 200px;
   height: 150px;
@@ -47,7 +43,60 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+}*/
+.image {
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid orange;
+    background-size: cover;
+    background-position: center;
 }
+/* Add background images via classes */
+.image1 {
+    background-image: url('images/restaurant7.jpg');
+}
+.image2 {
+    background-image: url('images/restaurant8.jpg');
+}
+.image3 {
+    background-image: url('images/restaurant9.jpg');
+}
+.image4 {
+    background-image: url('images/restaurant10.jpg');
+}
+.image5 {
+    background-image: url('images/restaurant11.jpg');
+}
+.image6 {
+    background-image: url('images/restaurant12.jpg');
+}
+.image7 {
+    background-image: url('images/restaurant13.jpg');
+}
+.image8 {
+  background-image: url('images/restaurant14.jpg');
+}
+.image9 {
+    background-image: url('images/restaurant15.jpg');
+}
+.image10 {
+    background-image: url('images/restaurant16.jpg');
+}
+.image11 {
+    background-image: url('images/restaurant17.webp');
+}
+.image12 {
+    background-image: url('images/restaurant18.jpg');
+}
+.image13 {
+    background-image: url('images/restaurant19.jpg');
+}
+.image14 {
+    background-image: url('images/restaurant20.jpg');
+}
+/* Add more image classes as needed */
 .box
 {
   display: flex;
@@ -75,3 +124,4 @@
   background-color: rgba(0, 0, 0, 0.3);
   color:#fff;
 }
+
