@@ -1,77 +1,142 @@
-html
-{
-   height: 100%;
+html {
+    height: 100%;
 }
-body 
-{
-   background: url("login.jpg") no-repeat;
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
-   color: blueviolet;
-   h1
-   {
-      font-size: 70px;
-      padding: 15px;
-   }
-   /*table
-   {
-      border-spacing: 10px;
-   }
-   button
-   {
-      padding: 6px;
-   }
-   button:active
-   {
-      padding: 10px;
-      background: #ffffff;
-   }
-   button:focus
-   {
-      background: blueviolet;
-   }*/
-   h2
-   {
-      color:white;
-      font-size: 25px;
-   }
-   p
-   {
-      color: white;
-      font-size: 20px;
-   }
+
+body {
+    background: url("login.jpg") no-repeat;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: blueviolet;
 }
-nav a{
-   text-decoration: none;
-   text-transform: capitalize;
-   color: blueviolet;
-   font-size: 20px;
-   font-weight: 600;
-   padding: 0 10px;
-   margin: 0 30px;
-   position: relative;
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
-nav a:hover{
-   color: blue;
+h1 {
+    font-size: 70px;
+    padding: 15px;
 }
-nav a::before{
-   content: '';
-   position: absolute;
-   bottom: -10px;
-   left: 0;
-   width: 0%;
-   height: 3px;
-   background-color: chocolate;
-   transition: all -2s;
+
+h2 {
+    color: white;
+    font-size: 25px;
 }
-nav a:hover::before{
-   width: 100%;
+
+p {
+    color: white;
+    font-size: 20px;
 }
-footer
-{
-   margin-top: auto;
-   border-radius: 100%;
-   margin-top: auto;
-   max-width:100%;
+
+/* NAVIGATION BAR */
+nav {
+    text-align: center;
 }
+
+nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0 30px;
+    position: relative;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: chocolate;
+    transition: all 0.3s;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* MAIN NAV LIST */
+ul.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    background: transparent;
+}
+
+ul.navbar li {
+    position: relative;
+    display: inline-block;
+}
+ul.dropdown li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px; /* spacing between icon and text */
+    padding: 25px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul.dropdown li a i {
+    font-size: 15px; /* optional: adjust icon size */
+}
+/* DROPDOWN MENU */
+ul.navbar li ul.dropdown {
+    display: none;
+    position: absolute;
+    background: #22438c;
+    top: 100%;
+    left: 0;
+    padding: 20px 20px;
+    width: 200px;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+ul.navbar li:hover ul.dropdown {
+    display: block;
+}
+
+ul.navbar li ul.dropdown li {
+    display: block;
+    width: 100%;
+}
+
+ul.navbar li ul.dropdown li a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+}
+
+ul.navbar li ul.dropdown li a:hover {
+    background: #112c66;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+/* PRE BLOCK IN FOOTER */
+pre {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 65%;
+}
+
